@@ -16,6 +16,7 @@
         "Makefile",
         "palettes.png",
         "src",
-        "test"
+        "test",
+        "Web"
   ]
 }
