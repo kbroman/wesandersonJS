@@ -61,4 +61,4 @@ of classes like:
 
 ### License
 
-Licensed under the [MIT license](LICENSE.md). ([More information here](http://en.wikipedia.org/wiki/MIT_License).)
+Licensed under the [MIT license](License.md). ([More information here](http://en.wikipedia.org/wiki/MIT_License).)
