@@ -1,0 +1,14 @@
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+svg text {
+    dominant-baseline: middle;
+    text-anchor: start;
+}
+
+p#caption {
+    margin-left: 50px;
+    font-size: 13px;
+}
