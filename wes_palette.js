@@ -3,7 +3,7 @@ var wes_palette = function(palette, n_colors) {
     var palette_names = Object.keys(wes_palettes);
     if(palette_names.indexOf(palette) < 0) {
         console.log("palette " + palette + " not found");
-        return(null);
+        return null;
     }
     var pal = wes_palettes[palette];
     if(n_colors === null) {
@@ -15,7 +15,7 @@ var wes_palette = function(palette, n_colors) {
     }
     if(n_colors > pal.length) {
         console.log("palette " + palette + " only has " + pal.length.toString() + " colors");
-        return(pal);
+        return pal;
     }
     return pal.slice(0,n_colors);
 };
