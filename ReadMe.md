@@ -20,3 +20,18 @@ bower install wesanderson
 
 You'll then find the `wesanderson.js` file in
 `bower_components/wesanderson/wesanderson.js`.
+
+### Usage
+
+[wesanderson.js](https://raw.githubusercontent.com/kbroman/wesandersonJS/master/wesanderson.js)
+contains two things:
+
+- `wes_palettes` - an object indexed by palette name, containing
+  arrays of colors. For example, `wes_palettes["Rushmore"]` gives a
+  vector of 5 colors from the movie
+  [Rushmore](http://en.wikipedia.org/wiki/Rushmore_%28film%29).
+
+- `wes_palette` - a function to be called with a color palette name
+  and (optionally) some number of colors. For example,
+  `wes_palette("Rushmore", 2)` will give you the first two colors in
+  the `Rushmore` palette.
