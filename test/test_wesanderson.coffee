@@ -1,6 +1,6 @@
 # visualize the wes anderson palettes
 
-height = 650
+height = 400
 width  = 800
 indent = 15
 textwidth = 115
@@ -12,9 +12,13 @@ svg = d3.select("div#chart")
         .attr("width", width)
 
 bgrect = svg.append("rect")
-        .attr("height", height)
-        .attr("width", width)
+        .attr("x", 2)
+        .attr("y", 2)
+        .attr("height", height-4)
+        .attr("width", width-54)
         .attr("fill", "white")
+        .attr("stroke", "black")
+        .attr("stroke-width", "3")
         .on("click", (d) ->
             bgrect.attr("fill", "white")
             text.attr("fill", "#333"))
@@ -37,6 +41,10 @@ vscale = (d) ->
 
 # horizontal offset (in two columns)
 hoffset = (d) ->
+    return indent if d < n_per_col
+    indent + 25 + width/2
+
+circhoffset = (d) ->
     return indent if d < n_per_col
     indent + width/2
 
@@ -74,7 +82,7 @@ for index of palettes
        .enter()
        .append("circle")
        .attr("cy", vscale(index))
-       .attr("cx", (d,i) -> hoffset(index) + hscale(i))
+       .attr("cx", (d,i) -> circhoffset(index) + hscale(i))
        .attr("r", radius)
        .attr("fill", (d) -> d)
        .attr("class", (d,i) ->
