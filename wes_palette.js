@@ -10,7 +10,7 @@ var wes_palette = function(palette, n_colors) {
         return pal;
     }
     if(n_colors == 0) {
-        console.log("No colors (n_colors==0)? That's just silly.")
+        console.log("No colors? That's just silly.")
         return pal;
     }
     if(n_colors > pal.length) {
