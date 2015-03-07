@@ -1,4 +1,5 @@
-wesanderson.js: create_wesandersonJS.R wes_palette.js
-	R CMD BATCH $<
-	cat wesanderson.js wes_palette.js > tmp.js
-	mv tmp.js wesanderson.js
+wesanderson.js: src/wes_palettes.js src/wes_palette.js
+	cat $^ > $@
+
+src/wes_palettes.js: src/create_wesandersonJS.R
+	cd $(<D);R CMD BATCH $(<F)

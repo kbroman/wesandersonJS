@@ -9,7 +9,7 @@ if(!require(wesanderson)) {
 # sort by name
 palnames <- sort(names(wes_palettes))
 
-file <- "wesanderson.js"
+file <- "wes_palettes.js"
 cat("// palettes from https://github.com/karthik/wesanderson\n",
     file=file)
 
