@@ -46,7 +46,7 @@ contains two things:
 [`wesanderson.css`](https://github.com/kbroman/wesandersonJS/master/wesanderson.css),
 is organized like the
 [`colorbrewer.css`](https://github.com/mbostock/d3/blob/master/lib/colorbrewer/colorbrewer.css)
-file that is distributed with d3. For each palette, it defines a set
+file that is distributed with [D3](http://d3js.org). For each palette, it defines a set
 of classes like:
 
 ```css
