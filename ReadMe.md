@@ -6,7 +6,7 @@ Color palettes based on Wes Anderson movies, taken from
 the first round of palettes of which were derived from
 [the Wes Anderson Palettes Tumblr](http://wesandersonpalettes.tumblr.com).
 
-![wes anderson palettes](palettes.jpg)
+![wes anderson palettes](palettes.png)
 
 ### Installation
 
