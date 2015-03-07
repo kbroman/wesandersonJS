@@ -1,7 +1,8 @@
-# grab palettes from wesanderson R package
+# grab palettes from wesanderson R package and make JS file
 # (https://github.com/karthik/wesanderson)
 
 if(!require(wesanderson)) {
+    library(devtools)
     install_github("karthik/wesanderson")
     library(wesanderson)
 }
