@@ -1,5 +1,5 @@
 // palettes from https://github.com/karthik/wesanderson
-var wesanderson = {
+var wes_palettes = {
  "BottleRocket": [ "#A42820", "#5F5647", "#9B110E", "#3F5151", "#4E2A1E", "#550307", "#0C1707" ],
 "Cavalcanti": [ "#D8B70A", "#02401B", "#A2A475", "#81A88D", "#972D15" ],
 "Chevalier": [ "#446455", "#FDD262", "#D3DDDC", "#C7B19C" ],
@@ -16,3 +16,24 @@ var wesanderson = {
 "Rushmore": [ "#E1BD6D", "#EABE94", "#0B775E", "#35274A", "#F2300F" ],
 "Zissou": [ "#3B9AB2", "#78B7C5", "#EBCC2A", "#E1AF00", "#F21A00" ] 
 };
+// helper function: call with a palette name and (optionally) some number of colors
+var wes_palette = function(palette, n_colors) {
+    var palette_names = Object.keys(wes_palettes);
+    if(palette_names.indexOf(palette) < 0) {
+        console.log("palette " + palette + " not found");
+        return(null);
+    }
+    var pal = wes_palettes[palette];
+    if(n_colors == null) {
+        return pal;
+    }
+    if(n_colors == 0) {
+        console.log("No colors (n_colors==0)? That's just silly.")
+        return pal;
+    }
+    if(n_colors > pal.length) {
+        console.log("palette " + palette + " only has " + pal.length.toString() + " colors");
+        return(pal);
+    }
+    return pal.slice(0,n_colors);
+}

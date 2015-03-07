@@ -15,6 +15,7 @@
         "**/.*",
         "create_wesandersonJS.R",
         "create_wesandersonJS.Rout",
-        "Makefile"
+        "Makefile",
+        "wes_palette.js"
   ]
 }
