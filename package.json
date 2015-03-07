@@ -1,0 +1,10 @@
+{
+  "name": "wesanderson",
+  "version": "0.3.3",
+  "description": "Color palettes from Wes Anderson movies",
+  "homepage": "https://github.com/kbroman/wesandersonJS",
+  "license": "MIT",
+  "authors": [
+    "Karl Broman <kbroman@gmail.com>"
+  ]
+}
