@@ -8,11 +8,18 @@ the first round of palettes of which were derived from
 
 ### Installation
 
-The easiest thing is to grab the
-[wesanderson.js](https://raw.githubusercontent.com/kbroman/wesandersonJS/master/wesanderson.js)
-file.
+You could grab the files directly from the github repository:
+[`wesanderson.js`](https://raw.githubusercontent.com/kbroman/wesandersonJS/master/wesanderson.js)
+and
+[`wesanderson.css`](https://raw.githubusercontent.com/kbroman/wesandersonJS/master/wesanderson.css).
 
-If you use [bower](http://bower.io/), you can use:
+Or you could clone the git repository:
+
+```
+git clone git://github.com/kbroman/wesandersonJS
+```
+
+Or, you can use [bower](http://bower.io/):
 
 ```
 bower install wesanderson
@@ -23,7 +30,7 @@ You'll then find the `wesanderson.js` file in
 
 ### Usage
 
-[wesanderson.js](https://raw.githubusercontent.com/kbroman/wesandersonJS/master/wesanderson.js)
+[`wesanderson.js`](https://github.com/kbroman/wesandersonJS/master/wesanderson.js)
 contains two things:
 
 - `wes_palettes` &ndash; an object indexed by palette name, containing
@@ -35,3 +42,17 @@ contains two things:
   and (optionally) some number of colors. For example,
   `wes_palette("Rushmore", 2)` will give you the first two colors in
   the `Rushmore` palette.
+
+[`wesanderson.css`](https://github.com/kbroman/wesandersonJS/master/wesanderson.css),
+is organized like the
+[`colorbrewer.css`](https://github.com/mbostock/d3/blob/master/lib/colorbrewer/colorbrewer.css)
+file that is distributed with d3. For each palette, it defines a set
+of classes like:
+
+```css
+.Rushmore.q0{fill:rgb(225,189,109)}
+.Rushmore.q1{fill:rgb(234,190,148)}
+.Rushmore.q2{fill:rgb(11,119,94)}
+.Rushmore.q3{fill:rgb(53,39,74)}
+.Rushmore.q4{fill:rgb(242,48,15)}
+```
