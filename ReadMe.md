@@ -56,3 +56,7 @@ of classes like:
 .Rushmore.q3{fill:rgb(53,39,74)}
 .Rushmore.q4{fill:rgb(242,48,15)}
 ```
+
+### License
+
+Licensed under the [MIT license](http://cran.r-project.org/web/licenses/MIT). ([More information here](http://en.wikipedia.org/wiki/MIT_License).)
