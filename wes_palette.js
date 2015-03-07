@@ -6,11 +6,11 @@ var wes_palette = function(palette, n_colors) {
         return(null);
     }
     var pal = wes_palettes[palette];
-    if(n_colors == null) {
+    if(n_colors === null) {
         return pal;
     }
-    if(n_colors == 0) {
-        console.log("No colors? That's just silly.")
+    if(+n_colors === 0) {
+        console.log("No colors? That's just silly.");
         return pal;
     }
     if(n_colors > pal.length) {
@@ -18,4 +18,4 @@ var wes_palette = function(palette, n_colors) {
         return(pal);
     }
     return pal.slice(0,n_colors);
-}
+};
