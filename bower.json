@@ -14,6 +14,7 @@
   "ignore": [
         "**/.*",
         "Makefile",
+        "palettes.png",
         "src",
         "test"
   ]
