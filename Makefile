@@ -1,4 +1,4 @@
-all: wesanderson.js wesanderson.css test/test_wesanderson.js
+all: wesanderson.js wesanderson.css test/test_wesanderson.js palettes.png
 
 # R options (--vanilla, but without --no-environ)
 R_OPTS=--no-save --no-restore --no-init-file --no-site-file
@@ -14,3 +14,6 @@ wesanderson.css: src/create_wesandersonCSS.R
 
 test/test_wesanderson.js: test/test_wesanderson.coffee
 	cd $(<D);coffee -bc $(<F)
+
+palettes.png: test/grab_png.R test/test_wesanderson.js
+	cd $(<D);R CMD BATCH $(R_OPTS) $(<F)

@@ -1,2 +1,3 @@
 *.Rout
 src/wes_palettes.js
+test/palettes.png
