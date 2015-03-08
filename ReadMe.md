@@ -45,7 +45,7 @@ contains two things:
   `wes_palette("Rushmore", 2)` will give you the first two colors in
   the `Rushmore` palette.
 
-[`wesanderson.css`](https://github.com/kbroman/wesandersonJS/master/wesanderson.css),
+[`wesanderson.css`](https://github.com/kbroman/wesandersonJS/master/wesanderson.css)
 is organized like the
 [`colorbrewer.css`](https://github.com/mbostock/d3/blob/master/lib/colorbrewer/colorbrewer.css)
 file that is distributed with [D3](http://d3js.org). For each palette, it defines a set
