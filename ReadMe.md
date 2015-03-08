@@ -32,6 +32,8 @@ You'll then find the `wesanderson.js` file in
 
 ### Usage
 
+#### Javascript palettes
+
 [`wesanderson.js`](https://github.com/kbroman/wesandersonJS/master/wesanderson.js)
 contains two things:
 
@@ -44,6 +46,8 @@ contains two things:
   and (optionally) some number of colors. For example,
   `wes_palette("Rushmore", 2)` will give you the first two colors in
   the `Rushmore` palette.
+
+#### CSS
 
 [`wesanderson.css`](https://github.com/kbroman/wesandersonJS/master/wesanderson.css)
 is organized like the
@@ -58,6 +62,21 @@ of classes like:
 .Rushmore.q3{fill:rgb(53,39,74)}
 .Rushmore.q4{fill:rgb(242,48,15)}
 ```
+
+Assign classes like `q0`, `q1`, `q2`, ..., to the elements you wish to
+be filled, and then set a class like `Rushmore` to a parent element,
+such as the SVG.
+
+#### D3 scales
+
+`wes_scales.js` contains some [D3](https://d3js.org) scales similar to
+[`d3.scale.category10()`](https://github.com/mbostock/d3/wiki/Ordinal-Scales#category10).
+
+```javascript
+var cscale = d3.scale.Rushmore();
+cscale.domain(["foo", "bar", "baz"]);
+```
+
 
 ### License
 
