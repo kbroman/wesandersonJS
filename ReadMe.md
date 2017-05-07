@@ -51,20 +51,20 @@ contains two things:
 
 [`wesanderson.css`](https://github.com/kbroman/wesandersonJS/master/wesanderson.css)
 is organized like the
-[`colorbrewer.css`](https://github.com/mbostock/d3/blob/master/lib/colorbrewer/colorbrewer.css)
-file that is distributed with [D3](http://d3js.org). For each palette, it defines a set
+[`colorbrewer.css`](https://github.com/jeanlauliac/colorbrewer/blob/master/colorbrewer.css)
+file that was distributed with [D3](http://d3js.org) version 3. For each palette, it defines a set
 of classes like:
 
 ```css
-.Rushmore.q0{fill:rgb(225,189,109)}
-.Rushmore.q1{fill:rgb(234,190,148)}
-.Rushmore.q2{fill:rgb(11,119,94)}
-.Rushmore.q3{fill:rgb(53,39,74)}
-.Rushmore.q4{fill:rgb(242,48,15)}
+.Rushmore1.q0{fill:rgb(225,189,109)}
+.Rushmore1.q1{fill:rgb(234,190,148)}
+.Rushmore1.q2{fill:rgb(11,119,94)}
+.Rushmore1.q3{fill:rgb(53,39,74)}
+.Rushmore1.q4{fill:rgb(242,48,15)}
 ```
 
 Assign classes like `q0`, `q1`, `q2`, ..., to the elements you wish to
-be filled, and then set a class like `Rushmore` to a parent element,
+be filled, and then set a class like `Rushmore1` to a parent element,
 such as the SVG.
 
 ### License
