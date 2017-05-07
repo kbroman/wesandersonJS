@@ -67,17 +67,6 @@ Assign classes like `q0`, `q1`, `q2`, ..., to the elements you wish to
 be filled, and then set a class like `Rushmore` to a parent element,
 such as the SVG.
 
-#### D3 scales
-
-`wes_scales.js` contains some [D3](https://d3js.org) scales similar to
-[`d3.scale.category10()`](https://github.com/mbostock/d3/wiki/Ordinal-Scales#category10).
-
-```javascript
-var cscale = d3.scale.Rushmore();
-cscale.domain(["foo", "bar", "baz"]);
-```
-
-
 ### License
 
 Licensed under the [MIT license](License.md). ([More information here](http://en.wikipedia.org/wiki/MIT_License).)
