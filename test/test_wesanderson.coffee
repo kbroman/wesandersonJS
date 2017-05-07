@@ -5,6 +5,7 @@ width  = 800
 indent = 15
 textwidth = 115
 radius = 15
+gap_betw_cols = 30
 
 svg = d3.select("div#chart")
         .append("svg")
@@ -44,11 +45,7 @@ vscale = (d) ->
 # horizontal offset (in two columns)
 hoffset = (d) ->
     return indent if d < n_per_col
-    indent + width/2
-
-circhoffset = (d) ->
-    return indent if d < n_per_col
-    indent + width/2
+    indent + width/2 + gap_betw_cols/2
 
 text = svg.selectAll("empty")
           .data(palettes)
@@ -62,7 +59,7 @@ text = svg.selectAll("empty")
 max_length = d3.max(palettes.map (pal) -> wes_palettes[pal].length)
 hscale = d3.scalePoint()
                  .domain(d3.range(max_length))
-                 .range([textwidth, width/2])
+                 .range([textwidth, width/2-gap_betw_cols/2])
                  .padding(1)
 
 dark_colors =
@@ -85,7 +82,7 @@ for index of palettes
        .enter()
        .append("circle")
        .attr("cy", vscale(index))
-       .attr("cx", (d,i) -> circhoffset(index) + hscale(i))
+       .attr("cx", (d,i) -> hoffset(index) + hscale(i))
        .attr("r", radius)
        .attr("fill", (d) -> d)
        .attr("class", (d,i) ->
