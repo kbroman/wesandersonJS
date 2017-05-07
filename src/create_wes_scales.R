@@ -11,11 +11,11 @@ if(!require(wesanderson)) {
 palnames <- sort(names(wes_palettes))
 
 file <- "../wes_scales.js"
-cat("// d3 scales for wes anderson palettes\n",
+cat("// d3 v4 scales for wes anderson palettes\n",
     file=file)
 
 for(pal in palnames) {
-    cat("d3.scale.", pal, "=function(){return d3.scale.ordinal().range([",
+    cat("d3.scale", pal, "=function(){return d3.scaleOrdinal().range([",
         paste0('"', wes_palettes[[pal]], '"', collapse=","),
         "]);}\n", sep="", file=file, append=TRUE)
 }

@@ -29,12 +29,14 @@ palettes = Object.keys(wes_palettes)
 n_per_col = Math.ceil(palettes.length/2)
 
 # vertical scale (in two columns)
-vscaleL = d3.scale.ordinal()
+vscaleL = d3.scalePoint()
                   .domain(d3.range(n_per_col))
-                  .rangePoints([0, height], 1)
-vscaleR = d3.scale.ordinal()
+                  .range([0, height])
+                  .padding(1)
+vscaleR = d3.scalePoint()
                   .domain(d3.range(n_per_col).map((d) -> d+n_per_col))
-                  .rangePoints([0, height], 1)
+                  .range([0, height])
+                  .padding(1)
 vscale = (d) ->
     return vscaleL(d) if d < n_per_col
     vscaleR(d)
@@ -42,7 +44,7 @@ vscale = (d) ->
 # horizontal offset (in two columns)
 hoffset = (d) ->
     return indent if d < n_per_col
-    indent + 25 + width/2
+    indent + width/2
 
 circhoffset = (d) ->
     return indent if d < n_per_col
@@ -58,9 +60,10 @@ text = svg.selectAll("empty")
           .attr("fill", "#333")
 
 max_length = d3.max(palettes.map (pal) -> wes_palettes[pal].length)
-hscale = d3.scale.ordinal()
+hscale = d3.scalePoint()
                  .domain(d3.range(max_length))
-                 .rangePoints([textwidth, width/2], 2)
+                 .range([textwidth, width/2])
+                 .padding(1)
 
 dark_colors =
     BottleRocket: [4, 5, 6]
