@@ -1,9 +1,9 @@
 # grab image with palettes
 
 if(!require(webshot)) {
-    library(devtools)
-    install_github("wch/webshot")
+    install.packages("webshot")
     library(webshot)
+    webshot::install_phantomjs()
 }
 
 webshot("index.html", "palettes.png", selector="div#chart")
