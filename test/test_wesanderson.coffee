@@ -3,7 +3,7 @@
 height = 400
 width  = 800
 indent = 15
-textwidth = 115
+textwidth = 125
 radius = 15
 gap_betw_cols = 30
 
