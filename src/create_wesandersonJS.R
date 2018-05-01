@@ -2,8 +2,7 @@
 # (https://github.com/karthik/wesanderson)
 
 if(!require(wesanderson)) {
-    library(devtools)
-    install_github("karthik/wesanderson")
+    install.packages("wesanderson")
     library(wesanderson)
 }
 
@@ -16,7 +15,7 @@ cat("// palettes from https://github.com/karthik/wesanderson\n",
 
 cat("var wes_palettes = ", file=file, append=TRUE)
 
-cat(RJSONIO::toJSON(wes_palettes[palnames]),
+cat(jsonlite::toJSON(wes_palettes[palnames]),
     file=file, append=TRUE)
 
 cat(";\n", file=file, append=TRUE)
