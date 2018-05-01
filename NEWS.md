@@ -1,3 +1,13 @@
+## wesandersonJS 0.7.1 (2018-05-01)
+
+### New features
+
+- Updated palettes to follow changes in
+  [Karthik Ram](http://inundata.org/)'s
+  [wesanderson R package](https://github.com/karthik/wesanderson).
+  In particular, two new palettes for Isle of Dogs.
+
+
 ## wesandersonJS 0.6.3 (2017-05-07)
 
 ### New features
