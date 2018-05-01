@@ -18,3 +18,6 @@ test/test_wesanderson.js: test/test_wesanderson.coffee
 
 palettes.png: test/grab_png.R test/test_wesanderson.js
 	cd $(<D);R CMD BATCH $(R_OPTS) $(<F)
+
+clean:
+	rm src/wes_palettes.js wesanderson.js wesanderson.css test/test_wesanderson.js palettes.png
