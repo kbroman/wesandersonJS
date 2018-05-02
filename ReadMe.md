@@ -49,7 +49,7 @@ contains two things:
 
 #### CSS
 
-[`wesanderson.css`](https://github.com/kbroman/wesandersonJS/master/wesanderson.css)
+[`wesanderson.css`](https://github.com/kbroman/wesandersonJS/blob/master/wesanderson.css)
 is organized like the
 [`colorbrewer.css`](https://github.com/jeanlauliac/colorbrewer/blob/master/colorbrewer.css)
 file that was distributed with [D3](http://d3js.org) version 3. For each palette, it defines a set
