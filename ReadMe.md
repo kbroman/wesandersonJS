@@ -34,7 +34,7 @@ You'll then find the `wesanderson.js` file in
 
 #### Javascript palettes
 
-[`wesanderson.js`](https://github.com/kbroman/wesandersonJS/master/wesanderson.js)
+[`wesanderson.js`](https://github.com/kbroman/wesandersonJS/blob/master/wesanderson.js)
 contains two things:
 
 - `wes_palettes` &ndash; an object indexed by palette name, containing
